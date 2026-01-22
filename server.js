@@ -42,8 +42,22 @@ app.get('/', (req,res) => { // having req first and res second apparently is imp
 
 
     
-    
     res.json(filteredData)
+})
+
+
+
+app.get('/api/:field/:term', (req, res) => {
+
+    const { field, term } = req.params // better to destructure it
+
+    const filteredData = startups.filter(
+        startup => startup[field].toLowerCase() === term.toLowerCase()
+    )
+
+    res.json(filteredData
+
+    )
 })
 
 app.listen(PORT, () => console.log(`server connected on port: ${PORT}`))
