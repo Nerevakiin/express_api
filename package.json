@@ -1,0 +1,23 @@
+{
+  "name": "startup_planet",
+  "version": "1.0.0",
+  "description": "a dataset of the world's most promising startups",
+  "homepage": "https://github.com/Nerevakiin/express_api#readme",
+  "bugs": {
+    "url": "https://github.com/Nerevakiin/express_api/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nerevakiin/express_api.git"
+  },
+  "license": "ISC",
+  "author": "stamatis",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
